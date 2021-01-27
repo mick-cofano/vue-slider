@@ -12,12 +12,13 @@
     <body>
         <div id="root" class="container">
             <div class="slider-wrapper">
-                <div class="prev">
+                <div class="prev" @click="prev">
                     <i class="fas fa-angle-left"></i>
                 </div>
-                <div id="imgs" class="images">
+                <div class="images">
+                  <img src="imgs">{{ imgs[imgIDX] }}
                 </div>
-                <div class="next">
+                <div class="next" @click="next">
                     <i class="fas fa-angle-right"></i>
                 </div>
                 <div class="nav">

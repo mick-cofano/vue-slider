@@ -7,9 +7,15 @@ new Vue({
       'https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg',
       'https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg',
       'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
-    ]
+    ],
+    imgIDX: 0,
   },
   methods: {
-
+    next: function() {
+      this.imgIDX += 1;
+    },
+    prev: function() {
+      this.imgIDX -= 1;
+    }
   }
 });
