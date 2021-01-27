@@ -11,11 +11,27 @@ new Vue({
     imgIDX: 0,
   },
   methods: {
+    // next: function() {
+    //   this.imgIDX += 1;
+    // },
+    // prev: function() {
+    //   this.imgIDX -= 1;
+    // }
+
     next: function() {
-      this.imgIDX += 1;
+      if(this.imgIDX === this.imgs.length - 1) {
+        this.imgIDX = 0;
+      } else {
+        this.imgIDX += 1;
+      }
     },
+
     prev: function() {
-      this.imgIDX -= 1;
+      if(this.imgIDX === 0) {
+        this.imgIDX = this.imgs.length - 1;
+      } else {
+        this.imgIDX -= 1;
+      }
     }
   }
 });
