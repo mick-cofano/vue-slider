@@ -16,7 +16,7 @@
                     <i class="fas fa-angle-left"></i>
                 </div>
                 <div class="images">
-                  <img src="imgs">{{ imgs[imgIDX] }}
+                  <img v-bind:src="imgs[imgIDX]"/>
                 </div>
                 <div class="next" @click="next">
                     <i class="fas fa-angle-right"></i>
